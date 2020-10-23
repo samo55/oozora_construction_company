@@ -1,4 +1,7 @@
 module.exports = {
   publicPath: '/oozora_construction_company/',
-  outputDir: 'docs'
+  outputDir: 'docs',
+  assetsDir: "./",
+  publicPath: "./",
+  baseUrl: './'
 }
