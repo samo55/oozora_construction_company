@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <img src="../assets/home.jpg" class="images">
+    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/home.jpg" class="images">
   </v-container>
 </template>
 

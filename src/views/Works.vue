@@ -10,7 +10,7 @@
     <br/>
 
     <h3>「スバルドダック」</h3>
-    <img src="../assets/スバルドダック.jpeg">
+    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/スバルドダック.jpeg">
     <br/>
     羊毛の暖かさに包まれたスバル社長の新居でございます。
     <br/>
@@ -21,7 +21,7 @@
     <br/>
     <br/>
     <h3>「焼けグソ」</h3>
-    <img src="../assets/焼けグソ.jpeg">
+    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/焼けグソ.jpeg">
     <br/>
     ネザーブロックで作られた、暖かさを通り越してむしろ暑ささえ感じられるスバル社長の寝室となっております。
     <br/>
@@ -30,7 +30,7 @@
     <br/>
     <br/>
     <h3>「大空事務所」</h3>
-    <img src="../assets/大空事務所.jpeg">
+    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/大空事務所.jpeg">
     <br/>
     兎田建設のぺこら社長をトラップにはめようと意気込んで建設された事務所でしたが、
     <br/>
