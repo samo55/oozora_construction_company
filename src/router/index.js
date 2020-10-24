@@ -7,27 +7,27 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/concept',
     name: 'Concept',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Concept.vue')
+    component: () => import('../views/Concept.vue')
   },
   {
     path: '/works',
     name: 'Works',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Works.vue')
+    component: () => import('../views/Works.vue')
   },
   {
     path: '/jobDescription',
     name: 'JobDescription',
-    component: () => import(/* webpackChunkName: "about" */ '../views/JobDescription.vue')
+    component: () => import('../views/JobDescription.vue')
   },
   {
     path: '/company',
     name: 'Company',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Company.vue')
+    component: () => import('../views/Company.vue')
   }
 ]
 
