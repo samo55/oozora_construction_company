@@ -9,19 +9,40 @@
     <br/>
     <br/>
     <h2>ABOUT US</h2>
-    <p>資本金： 0 円</p>
     <br/>
-    <p>所在地； ホロ鯖内のホロ村ちかく</p>
     <br/>
-    <p>連絡先； TEL 075-1234-5678</p>
-    <br/>
-    <p>事業内容； 新築住宅の設計および施工、トラップ建築</p>
-    <br/>
-    <p>営業時間； マイクラ配信時間内</p>
-    <br/>
-    <p>所属団体； ホロライブプロダクション</p>
-    <br/>
-    <p>代表取締役； 大空スバル</p>
+    <v-simple-table class="company-table">
+      <tbody>
+        <tr>
+          <td>資本金</td>
+          <td>０円</td>
+        </tr>
+        <tr>
+          <td>所在地</td>
+          <td>ホロ鯖内のホロ村ちかく</td>
+        </tr>
+        <tr>
+          <td>連絡先</td>
+          <td>TEL 075-1234-5678</td>
+        </tr>
+        <tr>
+          <td>事業内容</td>
+          <td>新築住宅の設計および施工、トラップ建築</td>
+        </tr>
+        <tr>
+          <td>営業時間</td>
+          <td>マイクラ配信時間内</td>
+        </tr>
+        <tr>
+          <td>所属団体</td>
+          <td>ホロライブプロダクション</td>
+        </tr>
+        <tr>
+          <td>代表取締役</td>
+          <td>大空スバル</td>
+        </tr>
+      </tbody>
+    </v-simple-table>
   </div>
 </template>
 
@@ -30,3 +51,10 @@ export default {
   name: 'Company',
 }
 </script>
+<style>
+.company-table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

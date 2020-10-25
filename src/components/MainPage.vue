@@ -1,22 +1,31 @@
 <template>
   <v-container>
-    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/home.jpg?raw=true" class="images">
+    <div class="navi">
+      <img class="photo" src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/home2.jpeg?raw=true">
+      <h1>大空建設</h1>
+      <br/>
+      <span>あなたと作る SHUBA SHUBA LIFE</span>
+    </div>
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'MainPage',
+export default {
+  name: 'MainPage',
 
-    data: () => ({}),
-  }
+  data: () => ({}),
+}
 </script>
 
 <style>
-.images {
+h1, span {
+  z-index: 0;
+}
+.photo {
   left: 0px;
   width: 100%;
-  height: 60%;
+  height: 100%;
   position: absolute;
+  z-index: -1;
 }
 </style>
