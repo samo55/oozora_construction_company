@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <v-app-bar class="pl-6">
+    <v-app-bar class="pl-6" flat>
       <v-avatar>
       <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%A2%E3%83%92%E3%83%AB.png?raw=true"/>
       </v-avatar>
       <h2>大空建設</h2>
       <v-spacer></v-spacer>
-      <router-link to="/">HOME</router-link>
+      <router-link to="/" class="nav-content">HOME</router-link>
       <v-spacer></v-spacer>
-      <router-link to="/concept">CONCEPT</router-link>
+      <router-link to="/concept" class="nav-content">CONCEPT</router-link>
       <v-spacer></v-spacer>
-      <router-link to="/works">WORKS</router-link>
+      <router-link to="/works" class="nav-content">WORKS</router-link>
       <v-spacer></v-spacer>
-      <router-link to="/jobDescription">RECRUIT</router-link>
+      <router-link to="/jobDescription" class="nav-content">RECRUIT</router-link>
       <v-spacer></v-spacer>
-      <router-link to="/company">COMPANY</router-link>
+      <router-link to="/company" class="nav-content">COMPANY</router-link>
       <v-spacer></v-spacer>
     </v-app-bar>
     <router-view/>
@@ -41,5 +41,8 @@
       color: #42b983;
     }
   }
+}
+a.nav-content {
+  text-decoration: none;
 }
 </style>
