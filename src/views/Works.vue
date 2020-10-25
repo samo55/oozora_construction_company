@@ -8,7 +8,6 @@
     <br/>
     <br/>
     <br/>
-
     <h3>「スバルドダック」</h3>
     <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%B9%E3%83%8F%E3%82%99%E3%83%AB%E3%83%88%E3%82%99%E3%82%BF%E3%82%99%E3%83%83%E3%82%AF.jpeg?raw=true">
     <br/>
@@ -40,12 +39,23 @@
     <br/>
     <br/>
     <br/>
+    <h3>「ペンギンハウス地下のトラップ」</h3>
+    <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%A2%E3%83%92%E3%83%AB%E3%83%88%E3%83%AD%E3%83%83%E3%82%B3.jpeg?raw=true">
+    <br/>
+    ぺこら社長に反撃すべく、ペンギンハウスの地下にトロッコを利用したトラップを建設しました。
+    <br/>
+    完成当初にはトロッコすべてにニワトリが乗っていましたが、
+    <br/>
+    育ちきったベリーの攻撃をうけ、２羽は天国へと元気に旅立ちました。
+    <br/>
+    スパイスラブの絆を表現した、日々の生活に賑やかさを与える作品の一つです。
+    <br/>
+    <br/>
+    <br/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'Works',
 }
