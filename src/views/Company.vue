@@ -43,6 +43,8 @@
         </tr>
       </tbody>
     </v-simple-table>
+    <br/>
+    <br/>
   </div>
 </template>
 
