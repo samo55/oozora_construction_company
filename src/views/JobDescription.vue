@@ -33,7 +33,7 @@
 export default {
   name: 'JobDescription',
   data: () => ({
-    items: [{value: 'スバル社長の配信をよく見ている'}, {value: 'トラップのアイデアを考えたり作ることが好き'}, {value: '一緒にマイクラ建設をやってみたい人'}]
+    items: [{value: 'スバル社長の配信をよく見ている'}, {value: 'トラップのアイデアを考えることが好き'}, {value: 'トラップを作ることが好き'}, {value: '一緒にマイクラ建築をやってみたい人'}]
   }),
 }
 </script>
