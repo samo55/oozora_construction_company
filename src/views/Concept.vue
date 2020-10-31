@@ -8,8 +8,17 @@
     <br/>
     <br/>
     <br/>
+    <div v-if="this.screen <= 540">
+    <p>社長の感性から生まれる</p>
+    <p>大胆な発想での建築を第一とし、</p>
+    <p>トラップに観光客がひっかかった</p>
+    <p>場合には全ロスさせない、</p>
+    <p>みんなに優しい設計を心がけています。</p>
+    </div>
+    <div v-if="this.screen > 540">
     <p>社長の感性から生まれる大胆な発想での建築を第一とし、</p>
     <p>トラップに観光客がひっかかった場合には全ロスさせない、みんなに優しい設計を心がけています。</p>
+    </div>
     <img class="subaru" src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%B9%E3%83%8F%E3%82%99%E3%83%AB.jpg?raw=true">
   </div>
 </template>
@@ -19,6 +28,12 @@
 
 export default {
   name: 'Concept',
+  data: () => ({
+    screen: ''
+  }),
+  mounted() {
+    this.screen = window.parent.screen.width;
+  },
 }
 </script>
 

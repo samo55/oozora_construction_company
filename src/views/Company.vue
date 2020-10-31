@@ -59,4 +59,10 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 700px) {
+  .company-table {
+    width: 100%;
+  }
+}
 </style>
