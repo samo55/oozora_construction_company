@@ -1,9 +1,11 @@
 <template>
+<v-app>
   <div class="company">
     <br/>
     <br/>
     <h1>COMPANY</h1>
     <span>会社案内</span>
+    <v-divider color="orange"></v-divider>
     <br/>
     <br/>
     <br/>
@@ -46,11 +48,12 @@
     <br/>
     <br/>
   </div>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: 'Company',
+  name: 'Company'
 }
 </script>
 <style>

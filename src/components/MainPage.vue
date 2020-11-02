@@ -10,9 +10,7 @@
 
 <script>
 export default {
-  name: 'MainPage',
-
-  data: () => ({}),
+  name: 'MainPage'
 }
 </script>
 

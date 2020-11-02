@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app-bar class="pl-6" flat>
-      <v-app-bar-nav-icon v-if="screen < 760" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-show="screen < 783" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-avatar class="dack">
       <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%A2%E3%83%92%E3%83%AB.png?raw=true"/>
       </v-avatar>
@@ -9,7 +9,7 @@
         <p>大空建設</p>
       </div>
         <v-spacer></v-spacer>
-        <v-tabs  abs flat fixed-tabs v-if="screen >= 760">
+        <v-tabs  abs flat fixed-tabs v-show="screen >= 783">
           <v-tab to="/" class="nav-content">HOME</v-tab>
           <v-tab to="/concept" class="nav-content">CONCEPT</v-tab>
           <v-tab to="/works" class="nav-content">WORKS</v-tab>
@@ -18,7 +18,7 @@
         </v-tabs>
       </v-app-bar>
       <v-navigation-drawer
-        v-if="screen < 760"
+        v-show="screen < 783"
         v-model="drawer"
         absolute
         left
@@ -62,7 +62,9 @@ export default {
     group: null
   }),
   mounted() {
-    this.screen = window.parent.screen.width;
+    window.addEventListener("resize", () => {
+      this.screen = window.innerWidth;
+    });
   },
   watch: {
     group () {
@@ -104,13 +106,9 @@ a.nav-content {
   text-decoration: none;
 }
 
-// Moto G4, Galaxy S5, Pixel2, iPhone6/7/8, iPhoneX
-@media screen and (max-width: 414px) {
-  .dack {
-    margin-left: 48%;
-  }
+@media screen and (max-width: 688px) {
   .logo {
-    width: auto;
+    width: 12%;
     font-size: large;
   }
   div.v-tabs {
@@ -121,12 +119,9 @@ a.nav-content {
   }
 }
 
-@media screen and (min-width: 415px) and (max-width: 539px) {
-  .dack {
-    margin-left: 44%;
-  }
+@media screen and (max-width: 647px) {
   .logo {
-    width: auto;
+    width: 15%;
     font-size: large;
   }
   div.v-tabs {
@@ -137,14 +132,62 @@ a.nav-content {
   }
 }
 
-// Surface Duo
-@media screen and (min-width: 540px) and (max-width: 550px) {
-  .dack {
-    margin-left: 65%;
-  }
+@media screen and (max-width: 526px) {
   .logo {
-    width: auto;
+    width: 20%;
     font-size: large;
+  }
+  div.v-tabs {
+    width: 66%;
+  }
+  a.nav-content {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  .logo {
+    width: 25%;
+    font-size: large;
+  }
+  div.v-tabs {
+    width: 66%;
+  }
+  a.nav-content {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .logo {
+    width: 20%;
+    font-size: large;
+  }
+  div.v-tabs {
+    width: 66%;
+  }
+  a.nav-content {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .logo {
+    width: 30%;
+    font-size: large;
+  }
+  div.v-tabs {
+    width: 66%;
+  }
+  a.nav-content {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 287px) {
+  .logo {
+    width: 33%;
+    font-size: initial;
   }
   div.v-tabs {
     width: 66%;

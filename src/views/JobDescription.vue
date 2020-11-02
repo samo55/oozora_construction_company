@@ -1,10 +1,12 @@
 
 <template>
+<v-app>
   <div class="jobDescription">
     <br/>
     <br/>
     <h1>RECRUIT</h1>
     <span>社員募集</span>
+    <v-divider color="orange"></v-divider>
     <br/>
     <br/>
     <br/>
@@ -25,8 +27,8 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-
   </div>
+</v-app>
 </template>
 
 <script>
@@ -34,7 +36,7 @@ export default {
   name: 'JobDescription',
   data: () => ({
     items: [{value: 'スバル社長の配信をよく見ている'}, {value: 'トラップのアイデアを考えることが好き'}, {value: 'トラップを作ることが好き'}, {value: '一緒にマイクラ建築をやってみたい人'}]
-  }),
+  })
 }
 </script>
 
