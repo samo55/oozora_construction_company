@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app-bar class="pl-6" flat>
-      <v-app-bar-nav-icon v-show="screen < 783" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-show="screen < 785" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-avatar class="dack">
       <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%A2%E3%83%92%E3%83%AB.png?raw=true"/>
       </v-avatar>
@@ -9,7 +9,7 @@
         <p>大空建設</p>
       </div>
         <v-spacer></v-spacer>
-        <v-tabs  abs flat fixed-tabs v-show="screen >= 783">
+        <v-tabs  abs flat fixed-tabs v-show="screen >= 785">
           <v-tab to="/" class="nav-content">HOME</v-tab>
           <v-tab to="/concept" class="nav-content">CONCEPT</v-tab>
           <v-tab to="/works" class="nav-content">WORKS</v-tab>
@@ -18,7 +18,7 @@
         </v-tabs>
       </v-app-bar>
       <v-navigation-drawer
-        v-show="screen < 783"
+        v-show="screen < 785"
         v-model="drawer"
         absolute
         left
@@ -62,6 +62,10 @@ export default {
     group: null
   }),
   mounted() {
+    window.onload = () => {
+      this.screen = window.innerWidth;
+    };
+
     window.addEventListener("resize", () => {
       this.screen = window.innerWidth;
     });
@@ -76,12 +80,18 @@ export default {
 
 
 <style lang="scss">
+body {
+  display: flex;
+flex-flow: column;
+min-height: 100vh;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  flex: 1;
 }
 
 #nav {

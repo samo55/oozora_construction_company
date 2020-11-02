@@ -1,23 +1,22 @@
 
 <template>
-<v-app>
-  <div class="jobDescription">
-    <br/>
-    <br/>
-    <h1>RECRUIT</h1>
-    <span>社員募集</span>
-    <v-divider color="orange"></v-divider>
-    <br/>
-    <br/>
-    <br/>
-    大空建設では社員を募集しています！
-    <br/>
-    A型の方も積極採用！！
-    <br/>
-    <br/>
-    <br/>
-    <h4>募集要項</h4>
-
+  <v-app>
+    <div class="jobDescription">
+      <br/>
+      <br/>
+      <h1>RECRUIT</h1>
+      <span>社員募集</span>
+      <v-divider color="orange"></v-divider>
+      <br/>
+      <br/>
+      <br/>
+      大空建設では社員を募集しています！
+      <br/>
+      A型の方も積極採用！！
+      <br/>
+      <br/>
+      <br/>
+      <h4>募集要項</h4>
       <v-list v-for="item in items" :key='item.value'>
         <v-list-item>
           <v-list-item-content>
@@ -27,8 +26,8 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-  </div>
-</v-app>
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -40,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .list {
   margin-left: auto;
   margin-right: auto;

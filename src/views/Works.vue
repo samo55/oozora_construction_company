@@ -89,6 +89,7 @@ export default {
   }
 }
 </script>
+
 <style scoped>
 @media screen and (max-width: 780px) {
   img {
