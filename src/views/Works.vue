@@ -23,7 +23,8 @@
       <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E7%84%BC%E3%81%91%E3%82%AF%E3%82%99%E3%82%BD.jpeg?raw=true">
       <br/>
       <div class="context">
-        <p>ネザーブロックで作られた、暖かさを通り越して暑さを感じるスバル社長の寝室です。百鬼あやめ嬢との共同合作です。</p>
+        <p>ネザーブロックで作られた、暖かさを通り越して暑さを感じるスバル社長の寝室です。</p>
+        <p>百鬼あやめ嬢との共同合作です。</p>
       </div>
       <br/>
       <br/>
@@ -40,7 +41,8 @@
       <img src="https://github.com/samo55/oozora_construction_company/blob/main/src/assets/%E3%82%A2%E3%83%92%E3%83%AB%E3%83%88%E3%83%AD%E3%83%83%E3%82%B3.jpeg?raw=true">
       <br/>
       <div class="context">
-        <p>ぺこら社長のイタズラに対抗すべく、ペンギンハウスの地下にトロッコを利用した騒音施設を建設しました。完成当初にはトロッコすべてにニワトリが乗っていましたが、育ちきったベリーの攻撃をうけ、２羽は天国へと元気に旅立ちました。</p>
+        <p>ぺこら社長のイタズラに対抗すべく、ペンギンハウスの地下にトロッコを利用した騒音施設を建設しました。</p>
+        <p>完成当初にはトロッコすべてにニワトリが乗っていましたが、育ちきったベリーの攻撃をうけ、２羽は天国へと元気に旅立ちました。</p>
         <p>スパイスラブの絆を表現した、日々の生活に賑やかさを与える作品の一つです。</p>
       </div>
       <br/>
@@ -99,5 +101,9 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
   transform: scale(0);
+}
+.context {
+  width: 90%;
+  margin: 0 auto;
 }
 </style>
